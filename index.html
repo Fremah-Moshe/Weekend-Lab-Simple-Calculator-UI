@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+<body>
+<div class="calc-container">
+    <h2>Simple Calculator</h2>
+
+    <!-- Input fields for the two operands -->
+    <div class="input-group">
+        <input id="num1" type="text" placeholder="First number" />
+        <input id="num2" type="text" placeholder="Second number" />
+    </div>
+
+    <!-- Operator buttons - storing operators in data-op attributes -->
+    <div class="operator-buttons">
+        <button data-op="+">+</button>
+        <button data-op="-">-</button>
+        <button data-op="*">x</button>
+        <button data-op="/">/</button>
+    </div>
+
+    <!-- Result display element -->
+    <div id="result"></div>
+</div>
+
+<script src="calculator.js"></script>
+</body>
+</html>
