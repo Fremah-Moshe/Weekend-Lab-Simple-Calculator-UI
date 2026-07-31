@@ -219,3 +219,16 @@ function handleResult(calcResult) {
         result.innerText = calcResult;
     }
 }
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+themeToggleBtn.addEventListener('click', () => {
+    // Toggle the dark-mode class on the <body> tag
+    document.body.classList.toggle('dark-mode');
+
+    // Update button label dynamically based on active state
+    if (document.body.classList.contains('dark-mode')) {
+        themeToggleBtn.textContent = '☀️ Light Mode';
+    } else {
+        themeToggleBtn.textContent = '🌙 Dark Mode';
+    }
+});
